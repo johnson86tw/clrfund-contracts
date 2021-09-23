@@ -59,7 +59,7 @@ interface MaciFactoryDependencies {
 
 export async function deployMaciFactory(
   account: Signer,
-  circuit = 'x32',
+  circuit = 'test',
   { poseidonT3, poseidonT6, batchUstVerifier, qvtVerifier }: MaciFactoryDependencies = {},
 ): Promise<Contract> {
   if (!poseidonT3) {
